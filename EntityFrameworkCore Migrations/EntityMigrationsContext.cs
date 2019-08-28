@@ -4,6 +4,7 @@ namespace EntityFrameworkCore_Migrations
 {
     public class EntityMigrationsContext : DbContext
     {
+        public DbSet<PaymentOrder> PaymentOrders { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
